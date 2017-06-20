@@ -4,7 +4,7 @@ TopCharts Project - This project is to display (save) Top Chart Numbers and Top 
 
 The script needs 4 parameters - Chart Type (chart or state_chart), Limit (number of chart tracks), Input File Path, Output Directory Path.
 
-It takes Json file as an input, reads the contents, (It does some general input validation checks while accepting the parameters) and depending on the type of chart and number of tracks, it will calculate top chart tracks (overall or statewise depending on the input) and store it in Output Directory Path. (Currently, coalesce has been used to store all the output rows in one file, however, it can be removed to store data in different part files if the input data is huge.)
+It takes Json file as an input, reads the contents, (It does some general input validation checks while accepting the parameters) and depending on the type of chart and number of tracks, it will calculate top chart tracks (overall or statewise depending on the input) and store it in Output Directory Path. (Currently, coalesce has been used to store all the output rows in one file, however, for huge data, it can be removed to distribute the data in different part files.)
 
 Pre-requisites: It expects Java 8, Spark 2.1.1, Scala 2.11 versions and sbt installed.
 

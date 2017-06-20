@@ -19,7 +19,7 @@ For example -
 (If running from the directory where the jar file is present)
 
 For chart as an input ->
-spark-submit --class com.ctm.Main --master local[4] ./ShazamEngine.jar chart 10 ~/gen_project/input_file/shazamtag.json ~/gen_project/output_file/
+spark-submit --class com.ctm.Main --master local[4] ./<jar_file_name>.jar chart 10 ~/gen_project/input_file/input.json ~/gen_project/output_file/
  
 For state_chart as an input ->
-spark-submit --class com.ctm.Main --master local[4] ./ShazamEngine.jar chart 10 ~/gen_project/input_file/shazamtag.json ~/gen_project/output_file/
+spark-submit --class com.ctm.Main --master local[4] ./<jar_file_name>.jar chart 10 ~/gen_project/input_file/input.json ~/gen_project/output_file/
